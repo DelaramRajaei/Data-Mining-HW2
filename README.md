@@ -14,8 +14,8 @@ Programming language: Python
 Libraries used in this project: Pandas, Numpy, Matplotlib, Sklearn, TenserFlow, Keras
 
 
-Section 1: 
-# Diabetes Prediction using XGBoost
+ 
+# Section 1: Diabetes Prediction using XGBoost
 
 ## Overview
 This repository contains a Jupyter Notebook (DM_Project_9731084.ipynb) that demonstrates the process of building a diabetes prediction model using XGBoost, a popular machine learning algorithm. The notebook covers various steps, including data preprocessing, model creation, parameter tuning, and evaluation.
