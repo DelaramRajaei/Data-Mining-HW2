@@ -51,4 +51,4 @@ The neural network is initially built without any activation functions, resultin
 ## Conclusion
 
 This repository serves as a practical guide for understanding the importance of activation functions and loss functions in neural networks. Feel free to explore and modify the code to experiment with different configurations and further improve the model's performance.
-```
+
