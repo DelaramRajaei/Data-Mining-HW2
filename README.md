@@ -12,58 +12,43 @@ Given tasks are:
 Tech stack: 
 Programming language: Python
 Libraries used in this project: Pandas, Numpy, Matplotlib, Sklearn, TenserFlow, Keras
-
-
  
-# Section 1: Diabetes Prediction using XGBoost
 
-## Overview
-This repository contains a Jupyter Notebook (DM_Project_9731084.ipynb) that demonstrates the process of building a diabetes prediction model using XGBoost, a popular machine learning algorithm. The notebook covers various steps, including data preprocessing, model creation, parameter tuning, and evaluation.
+# Section1: Neural Network for Binary Classification
 
-## Table of Contents
-1. **Introduction**
-2. **Preprocessing**
-   - Handling Missing Data
-   - Renaming Columns
-   - Normalization
-   - One-Hot Encoding
-3. **Model Building**
-   - Train-Test Split
-   - XGBoost Classifier
-4. **Model Evaluation**
-   - Hyperparameter Tuning
-5. **Conclusion**
+This repository contains the implementation of a simple neural network for binary classification using the Keras library. The primary goal is to demonstrate the impact of different configurations on model performance, particularly focusing on activation functions.
 
-## Introduction
-The primary goal of this project is to predict diabetes using a machine learning model. The dataset (`diabetes.csv`) is preprocessed and used to train an XGBoost classifier. The model's performance is evaluated, and hyperparameter tuning is performed to improve predictive capabilities.
+## Getting Started
 
-## Preprocessing
-### Handling Missing Data
-Null values are identified and replaced with mode or relevant statistical measures. Rows with unknown values are removed for data integrity.
+To run the code in this repository, make sure you have the necessary dependencies installed. You can install them using the following command:
 
-### Renaming Columns
-Column names are checked for spaces and replaced with underscores for ease of use.
+```bash
+pip install numpy pandas scikit-learn keras tensorflow matplotlib
+```
 
-### Normalization
-BMI is binned into categories, and two health columns are normalized using min-max scaling.
+## Usage
 
-### One-Hot Encoding
-Categorical features are one-hot encoded for compatibility with machine learning algorithms.
+The main script is provided in the Jupyter Notebook named `DM_HW2_9731084_code_seaction1.ipynb`. The notebook is divided into sections, each illustrating a different aspect of the neural network implementation.
 
-## Model Building
-### Train-Test Split
-The dataset is split into training and testing sets for model learning and validation.
+1. **Dataset Creation and Visualization**
+   - Utilizes the `make_circles` function from `sklearn.datasets` to generate 200 circles randomly.
+   - Splits the dataset into training and testing sets.
+   - Visualizes the circles using a scatter plot.
 
-### XGBoost Classifier
-An XGBoost classifier is employed for diabetes prediction, and the model is trained on the training set.
+2. **Model Creation and Training**
+   - Builds a neural network with an input layer, two hidden layers, and an output layer.
+   - Demonstrates the impact of different activation functions on model performance.
+   - Plots training accuracy and loss over epochs.
 
-## Model Evaluation
-The model's accuracy, recall, and precision are evaluated on both training and testing sets. Confusion matrices are generated to visualize performance.
+3. **Model Evaluation**
+   - Evaluates the trained model on a test set.
+   - Calculates and prints the accuracy of the model on the test data.
 
-## Hyperparameter Tuning
-The notebook explores hyperparameter tuning using a grid search approach to optimize the XGBoost model's performance. The best parameters are identified, and the model is retrained with these parameters.
+## Results
+
+The neural network is initially built without any activation functions, resulting in poor performance. Subsequent models are created by introducing activation functions, such as ReLU and Sigmoid, which lead to improvements in accuracy. Additionally, experimenting with the loss function further enhances the model's predictive capabilities.
 
 ## Conclusion
-According to the drawn charts, the learning rate is the only parameter with a significant impact. Other parameters have horizontal plots, indicating minimal influence on the model's performance.
 
-Feel free to explore the notebook for a detailed walkthrough of each step and the corresponding code.
+This repository serves as a practical guide for understanding the importance of activation functions and loss functions in neural networks. Feel free to explore and modify the code to experiment with different configurations and further improve the model's performance.
+```
